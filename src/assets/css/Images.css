@@ -1,0 +1,113 @@
+/* 
+* Anything styling images
+*/
+.responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Video */
+.video {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Imagine sizing */
+img.xsmall {
+    width: 100%;
+    height: auto;
+    max-width: 50px;
+    padding: 5px;
+}
+
+img.small {
+    width: 100%;
+    height: auto;
+    max-width: 100px;
+    padding: 5px;
+}
+
+img.medium {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    padding: 5px;
+}
+
+img.large {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    padding: 5px;
+}
+
+img.xlarge {
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+    padding: 5px;
+}
+
+/* Icons */
+.m-flat-icon {
+    max-width: 175px;
+}
+
+i.small {
+    width: 100%;
+    height: auto;
+    max-width: 100px;
+    padding: 5px;
+}
+
+i.medium {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    padding: 5px;
+}
+
+i.large {
+    width: 100%;
+    height: auto;
+    max-width: 300px !important;
+    padding: 5px;
+}
+
+/* em styling */
+img.s-em {
+    height: 1em;
+}
+
+img.m-em {
+    height: 1.25em;
+}
+
+img.l-em {
+    height: 1.75em;
+}
+
+img.xl-em {
+    height: 2em;
+}
+
+/* Captions */
+div.captioned {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+.caption {
+    display: block;
+}

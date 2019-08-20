@@ -1,0 +1,249 @@
+/***************************************** 
+* Top nav
+*****************************************/
+
+/* Large */
+@media screen and (min-width: 701px) {
+  .nav-container {
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+
+
+/* Small */
+@media screen and (max-width: 700px) {
+  .nav-container {
+    margin: 0 auto;
+  }
+}
+
+.top-nav {
+  width: 100%;
+  background: white;
+  height: 50px;
+  position: fixed;
+  margin: 0 0 0 0;
+  z-index: 1;
+}
+
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  height: 50px;
+  line-height: 50px;
+  white-space: nowrap;
+  color: #0E76BC;
+  padding: 0px 10px 0px 10px;
+}
+
+.nav-link:hover:after {
+  content: " ";
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  width: 30px;
+  border: 1px solid #FFF200;
+  background-color: #FFF200;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  transform: translateX(-50%);
+}
+
+.nav-select:after {
+  content: " ";
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  width: 30px;
+  border: 1px solid #FFF200;
+  background-color: #FFF200;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  transform: translateX(-50%);
+}
+
+.nav-logo {
+  width: 100%;
+  height: auto;
+  max-width: 100px;
+  padding: 5px;
+}
+
+/* 
+* Drop down 
+*/
+.top-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.top-dropdown-content {
+  display: none;
+  position: absolute;
+  top: 105%;
+  right: -50%;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.top-dropdown-content a {
+  color: gray;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.top-dropdown-content a:hover:after {
+  content: " ";
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  width: 30px;
+  border: 1px solid #FFF200;
+  background-color: #FFF200;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  transform: translateX(-50%);
+}
+
+.top-dropdown-content a.top-dropdown-select:after {
+  content: " ";
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  width: 30px;
+  border: 1px solid #FFF200;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  transform: translateX(-50%);
+}
+
+.top-dropdown:hover .top-dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #0E76BC;
+}
+
+/***************************************** 
+* Side nav
+*****************************************/
+/* Individual item */
+.bm-item {
+  display: inline-block;
+  /* Our sidebar item styling */
+  text-decoration: none;
+  margin-bottom: 16px;
+  color: white;
+  transition: color 0.2s;
+  outline: 0;
+  height: 42px;
+  line-height: 42px;
+  white-space: nowrap;
+  padding: 0px 10px 0px 10px;
+}
+
+/* Change color on hover */
+.bm-item:hover {
+  color: #FFF200;
+}
+
+/* The rest copied directly from react-burger-menu docs */
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: absolute;
+  width: 36px;
+  height: 30px;
+  right: 15px;
+  top: 15px;
+  outline: 0;
+}
+
+.white-fill {
+  fill: white;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: white;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: white;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  position: relative;
+  background: #0E76BC;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+  text-align: center;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #0E76BC;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+}
+
+/* Styling of overlay */
+/* .bm-overlay {
+  background: rgba(52, 52, 52, 0.3);
+} */
+
+/* 
+* Drop down 
+*/
+.side-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.side-dropdown-content {
+  display: none;
+  position: absolute;
+  top: 105%;
+  right: 24%;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.side-dropdown-content a {
+  color: gray;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.side-dropdown-content a:hover {
+  background-color: #f8f8f844;
+  color: #FFF200;
+}
+
+.side-dropdown:hover .side-dropdown-content {
+  display: block;
+}
+
+.side-dropdown:hover .dropbtn {
+  background-color: #0E76BC;
+}

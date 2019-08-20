@@ -1,0 +1,244 @@
+/* 
+* Small Buttons 
+*/
+
+.disabled{
+    opacity: 0.25;
+    filter: alpha(opacity=25);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.s-btn {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 5px 16px;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    outline-width: 0;
+    color: white;
+    background-color: #0E76BC;
+    border: 1px solid #0E76BC;
+}
+
+.s-btn:hover {
+    background-color: rgb(59, 184, 230);
+}
+
+.s-btn-inv {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px; 
+    padding: 5px 16px;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    outline-width: 0;
+    /* differences */
+    color: #0E76BC;
+    background-color: white;
+    border: 1px solid #0E76BC;
+}
+
+.s-btn-inv:hover {
+    background-color: #c4eeff;
+}
+
+/* Success */
+.s-btn-success {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 5px 16px;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    outline-width: 0;
+    color: white;
+    background-color: rgb(19, 204, 13);
+    border: 1px solid rgb(19, 204, 13);
+}
+
+.s-btn-success:hover {
+    background-color: rgb(3, 189, 34);
+}
+
+.s-btn-success-inv {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px; 
+    padding: 5px 16px;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    outline-width: 0;
+    /* differences */
+    color: rgb(19, 204, 13);
+    background-color: white;
+    border: 1px solid rgb(19, 204, 13);
+}
+
+.s-btn-success-inv:hover {
+    background-color:rgb(3, 189, 34);
+    color: white;
+}
+
+/* Danger */
+.s-btn-danger {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 5px 16px;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    outline-width: 0;
+
+    color: white;
+    background-color: rgb(252, 36, 36);
+    border: 1px solid rgb(252, 36, 36);
+}
+
+.s-btn-danger:hover {
+    background-color: rgb(255, 88, 88);
+}
+
+.s-btn-danger-inv {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 5px 16px;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    outline-width: 0;
+
+    color: rgb(252, 36, 36);
+    background-color: white;
+    border: 1px solid rgb(252, 36, 36);
+}
+
+.s-btn-danger-inv:hover { 
+    background-color: rgb(255, 88, 88);
+    color: white;
+}
+
+/* Warning */
+.s-btn-warning {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 5px 16px;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    outline-width: 0;
+
+    color: white;
+    background-color: #FFD54C;
+    border: 1px solid #FFD54C;
+}
+
+.s-btn-warning:hover {
+    background-color: #FFD54C;;
+}
+
+.s-btn-warning-inv {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    background-color: white;
+    border: 1px solid #FFD54C;
+    border-radius: 4px;
+    color: #FFD54C;
+    padding: 5px 16px;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    outline-width: 0;
+}
+
+.s-btn-warning-inv:hover {
+    background-color: #FFD54C;
+    color: white;
+}
+
+/*
+* Medium Buttons 
+*/
+
+.m-btn {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    background-color: #0E76BC; /* Green */
+    border: 1px solid #0E76BC;
+    border-radius: 4px;
+    color: white;
+    padding: 15px 32px;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    outline-width: 0;
+}
+
+.m-btn:hover {
+    background-color: rgb(59, 184, 230);
+}
+
+.m-btn-inv {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    background-color: white; /* Green */
+    border: 1px solid #0E76BC;
+    border-radius: 4px;
+    color: #0E76BC;
+    padding: 15px 32px;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    outline-width: 0;
+}
+
+.m-btn-inv:hover {
+    background-color: #c4eeff;
+}
+
+/* Close Button */
+.close {
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.6;
+    cursor: pointer;
+  }
+  .close:hover {
+    opacity: 1;
+  }
+  .close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 24px;
+    width: 2px;
+    background-color: #333;
+  }
+  .close:before {
+    transform: rotate(45deg);
+  }
+  .close:after {
+    transform: rotate(-45deg);
+  }
+  

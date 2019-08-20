@@ -1,0 +1,230 @@
+/* Colors */
+/* Primary: #0E76BC */
+/*  Secondary: #FFF200 */
+
+@font-face {
+    font-family: "Agency Regular";
+    src: url(../fonts/Agency_Regular.otf);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap');
+
+.regular-font {
+    font-family: "Agency Regular";
+    line-height: 1.6;
+    font-size: 16;
+}
+
+h1 {
+    font-size: 3em;
+    font-family: "Agency Regular";
+    color: #0E76BC;
+}
+
+h2 {
+    font-size: 2em;
+    font-family: "Agency Regular";
+    color: #0E76BC;
+}
+
+h3 {
+    font-size: 1.5em;
+    padding: 0px !important;
+    margin: 0px !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre;
+    font-family: "Agency Regular";
+    color: #0E76BC;
+}
+
+@media screen and (max-width: 700px) {
+    h3 {
+        font-size: 1em;
+        padding: 0px !important;
+        margin: 0px !important;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: pre;
+        width: 60%;
+        font-family: "Agency Regular";
+        color: #0E76BC;
+    }
+}
+
+h4 {
+    font-family: "Agency Regular";
+    color: #0E76BC;
+}
+
+h5 {
+    font-family: "Agency Regular";
+    color: #0E76BC;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    font-size: 16;
+}
+
+p.indent {
+    text-indent: 2.5em;
+}
+
+.s-line-height {
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+ul,
+ol,
+li {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    font-size: 16;
+}
+
+label {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Text size */
+.xs-text {
+    font-size: 8px;
+}
+
+.s-text {
+    font-size: 12px;
+}
+
+.m-text {
+    font-size: 16px;
+}
+
+.l-text {
+    font-size: 20px;
+}
+
+.xl-text {
+    font-size: 24px;
+}
+
+/* Text color */
+.grey {
+    color: grey !important;
+}
+.black {
+    color: black !important;
+}
+.blue {
+    color: #0E76BC !important;
+}
+.yellow {
+    color: #ffd54c !important;
+}
+.white {
+    color: white !important;
+}
+.red {
+    color: rgb(252, 36, 36) !important;
+}
+.green {
+    color: rgb(19, 204, 13) !important;
+}
+
+/* Text hover color */
+.text-hover:hover {
+    color: #0E76BC  !important;
+    cursor: pointer;
+}
+
+.text-hover-danger:hover {
+    color: rgb(252, 36, 36)  !important;
+    cursor: pointer;
+}
+
+.text-hover-warn:hover {
+    color: #ffd54c  !important;
+    cursor: pointer;
+}
+
+
+/* Heading in center of <hr/> */
+/* EXAMPLE:
+            <h2 className="heading-rule">
+            <span>Messages</span>
+            </h2>      
+*/
+.heading-rule {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #0E76BC;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+}
+
+.heading-rule span {
+    background: #fff;
+    padding: 0 10px;
+    color: black;
+    font-family: "AvenirNext-Bold" !important;
+}
+
+
+
+/* Multiline text overflow */
+.block-with-text {
+    /* hide text if it more than N lines  */
+    overflow: hidden;
+    /* for set '...' in absolute position */
+    position: relative;
+    /* use this value to count block height */
+    line-height: 1.5em;
+    /* max-height = line-height (1.2) * lines max number (3) */
+    max-height: 4.5em;
+    /* fix problem when last visible word doesn't adjoin right side  */
+    text-align: justify;
+    margin-right: -1em;
+    padding-right: 1em;
+    padding: 0 1em 0 0;
+    margin: 0 -1em 0 0;
+}
+.block-with-text:before {
+    /* points in the end */
+    content: "...";
+    /* absolute position */
+    position: absolute;
+    /* set position to right bottom corner of block */
+    right: 0;
+    bottom: 0;
+}
+.block-with-text:after {
+    /* points in the end */
+    content: "";
+    /* absolute position */
+    position: absolute;
+    /* set position to right bottom corner of text */
+    right: 0;
+    width: 1em;
+    /* set width and height */
+    height: 1em;
+    margin-top: 0.2em;
+    background: white;
+}
+
+/* Misc */
+/* This one is kinda an alignment one too? */
+.center-text {
+    text-align: center !important; 
+}
+
+.underline {
+    text-decoration: underline;
+}
+  

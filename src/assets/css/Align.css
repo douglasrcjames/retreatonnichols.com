@@ -1,0 +1,289 @@
+/* Alignment CSS contains styles such as margins, 
+   padding, width, containers, and positioning. */
+/* -------------------------------------------- */
+
+
+/* Main alignment (for footer?) */
+html {
+    position: relative;
+    min-height: 100%;
+  }
+  body {
+    margin: 0 0 100px;
+    padding: 0;
+  }
+  
+
+/* 
+* Responsive Containers and Widths
+*/
+/* Large */
+@media screen and (min-width: 1181px) {
+    .wrapper {
+        /* For outer div holding the body */
+        margin: 0 auto;
+        width: 80%;
+        padding: 2.5% 0 0 0;
+    }
+
+    .l-container {
+        margin: auto;
+        width: 70%;
+        padding: 1%;
+    }
+
+    .m-container {
+        margin: auto;
+        width: 50%;
+        padding: 1%;
+    }
+
+    .s-container {
+        margin: auto;
+        width: 25%;
+        padding: 1%;
+    }
+}
+
+/* Medium */
+@media screen and (min-width: 561px) and (max-width: 1180px) {
+    .wrapper {
+        margin: 0 auto;
+        width: 70%;
+        padding: 5% 0 0 0;
+    }
+
+    .l-container {
+        margin: auto;
+        width: 90%;
+        padding: 1%;
+    }
+
+    .m-container {
+        margin: auto;
+        width: 80%;
+        padding: 1%;
+    }
+
+    .s-container {
+        margin: auto;
+        width: 70%;
+        padding: 1%;
+    }
+}
+
+/* Small */
+@media screen and (max-width: 700px) {
+    .wrapper {
+        margin: 0 auto;
+        width: 90%;
+        padding: 10% 0 0 0;
+    }
+
+    .l-container {
+        margin: auto;
+        width: 95%;
+        padding: 1%;
+    }
+
+    .m-container {
+        margin: auto;
+        width: 95%;
+        padding: 0.5%;
+    }
+
+    .s-container {
+        margin: auto;
+        width: 95%;
+        padding: 0.5%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .s-width {
+        width: 90% !important;
+    }
+
+    .m-width {
+        width: 90% !important;
+    }
+
+    .l-width {
+        width: 90% !important;
+    }
+}
+
+@media screen and (min-width: 701px) {
+    .s-width {
+        width: 25% !important;
+    }
+
+    .m-width {
+        width: 50% !important;
+    }
+
+    .l-width {
+        width: 75% !important;
+    }
+}
+
+
+/*
+* Positioning
+*/
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: center;
+}
+
+.right {
+    display: block;
+    float: right;
+}
+
+.left {
+    display: block;
+    float: left;
+}
+
+/* Position attribute added */
+.p-container {
+    position: relative;
+}
+
+.p-top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+.p-top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+.p-bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+.p-bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.p-center {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+.p-bottom-center {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* 
+* Padding
+*/
+.no-padding {
+    padding: 0px !important;
+}
+
+.s-padding-r {
+    padding: 0 1% 0 0;
+}
+
+.l-padding-r {
+    padding: 0 10% 0 0;
+}
+
+.s-padding-b {
+    padding: 0 0 1% 0;
+}
+
+.m-padding-t {
+    padding: 5% 0 0 0;
+}
+
+.m-padding-r-l {
+    padding: 0 5% 0 5%;
+}
+
+.m-padding-r {
+    padding: 0 5% 0 0;
+}
+
+.l-padding-r-l {
+    padding: 0 10% 0 10%;
+}
+
+.s-padding {
+    padding: 1%;
+}
+
+.m-padding {
+    padding: 5%;
+}
+
+.l-padding {
+    padding: 10%;
+}
+
+
+/* 
+*  Margin
+*/
+  
+.no-margin {
+    margin: 0px !important;
+}
+
+.s-margin {
+    margin: 1%;
+}
+
+.m-margin {
+    margin: 5%;
+}
+
+.l-margin {
+    margin: 10%;
+}
+
+.m-margin-t {
+    margin: 5% 0 0 0;
+}
+
+.s-margin-t-b {
+    margin: 1% 0% 1% 0%;
+}
+
+.l-margin-r {
+    margin: 0 15% 0% 0% !important;
+}
+
+/*
+* Misc 
+*/
+
+.inline {
+    display: inline; 
+}
+
+.horiz-center {
+    margin: 0 auto;
+}
+
+  
