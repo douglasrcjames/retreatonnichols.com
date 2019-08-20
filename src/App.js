@@ -21,7 +21,7 @@ function App() {
     <div>
       <BrowserRouter>
         <Header />
-        <div className="wrapper">
+        <div>
           <Routes />
         </div>
         <Footer />

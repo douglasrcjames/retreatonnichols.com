@@ -41,7 +41,7 @@ class Header extends Component {
                       Home
                   </NavLink>
                   <NavLink to="/about-us" className="nav-link" activeClassName="nav-select">
-                        About Us
+                      About Us
                   </NavLink>
                   &nbsp;
                 </div>
