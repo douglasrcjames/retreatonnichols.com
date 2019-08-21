@@ -1,14 +1,17 @@
 import React, { Component } from 'react'
 import SimpleMap from './SimpleMap'
-// import PartyVid from '../assets/videos/party.mp4'
-var PartyVid = null;
+
 export default class Home extends Component {
 
     render() {
+        var PartyVid = `http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4`;
         return (
             <>
             <div className="video-container">
-                <video autoplay="autoplay" loop >
+                <video 
+                    autoplay="autoplay" 
+                    loop 
+                    muted>
                     <source src={PartyVid} type="video/mp4" />
                     <source src={PartyVid} type="video/ogg" />
                     Your browser does not support the video tag.
