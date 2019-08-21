@@ -39,16 +39,15 @@ h3 {
 }
 
 @media screen and (max-width: 700px) {
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
     h3 {
         font-size: 1em;
-        padding: 0px !important;
-        margin: 0px !important;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: pre;
         width: 60%;
-        font-family: "Agency Regular";
-        color: #0E76BC;
     }
 }
 

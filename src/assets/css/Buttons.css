@@ -25,7 +25,7 @@
 }
 
 .s-btn:hover {
-    background-color: rgb(59, 184, 230);
+    background-color: rgb(12, 91, 145);
 }
 
 .s-btn-inv {
@@ -45,7 +45,7 @@
 }
 
 .s-btn-inv:hover {
-    background-color: #c4eeff;
+    background-color: rgb(12, 91, 145);
 }
 
 /* Success */
@@ -192,7 +192,7 @@
 }
 
 .m-btn:hover {
-    background-color: rgb(59, 184, 230);
+    background-color: rgb(12, 91, 145);
 }
 
 .m-btn-inv {
@@ -211,7 +211,7 @@
 }
 
 .m-btn-inv:hover {
-    background-color: #c4eeff;
+    background-color: rgb(12, 91, 145);
 }
 
 /* Close Button */

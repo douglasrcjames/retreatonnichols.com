@@ -6,9 +6,9 @@ import Home from "./components/Home";
 import withTracker from './components/WithTracker';
 
 const Page404 = ({ location }) => (
-  <div className="m-padding">
+  <div className="wrapper">
     {/* <img src={error404} alt="error404" className="large responsive center" /> */}
-    <p>
+    <p className="m-padding">
       Uh oh... doesn't look like this page exists. Check the web address and try
       again.
     </p>

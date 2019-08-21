@@ -8,7 +8,7 @@ class SimpleMap extends Component {
         this.state = {
             mapStyles: {
                 width: '100%',
-                height: '40vh',
+                height: '40vh'
               }
         }
     }
@@ -28,5 +28,6 @@ class SimpleMap extends Component {
 }
 
 export default GoogleApiWrapper({
-    apiKey: 'AIzaSyD2v3qtDML3sFbyaoRX5-m2AI9jjB61apQ'
+    apiKey: 'AIzaSyD2v3qtDML3sFbyaoRX5-m2AI9jjB61apQ',
+    wrapperClassName: 'p-child p-container inline'
   })(SimpleMap);

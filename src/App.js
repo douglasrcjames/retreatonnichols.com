@@ -18,16 +18,11 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div>
       <BrowserRouter>
         <Header />
-        <div>
-          <Routes />
-        </div>
+        <Routes />
         <Footer />
       </BrowserRouter>
-      
-    </div>
   );
 }
 
