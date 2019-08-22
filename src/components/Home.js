@@ -35,6 +35,9 @@ export default class Home extends Component {
                 <br/>
                
             </div>
+            
+            <SimpleMap />
+
             <div className="l-container">
                 <h1>The Neighborhood</h1>
                 <p>
@@ -53,7 +56,6 @@ export default class Home extends Component {
                     Enjoy the warm and friendly charm of a walkable Southern town as you dine, shop, strut and stroll! Even those from Olean, New York are welcome and bound to enjoy themselves!
                 </p>
             </div>
-            <SimpleMap />
  
             
             

@@ -8,21 +8,24 @@ class SimpleMap extends Component {
         this.state = {
             mapStyles: {
                 width: '100%',
-                height: '40vh'
+                height: '100%'
               }
         }
     }
 
     render() {
         return (
-            <Map
-                google={this.props.google}
-                zoom={15}
-                style={this.state.mapStyles}
-                initialCenter={{ lat: 30.516214, lng: -87.895966}}
-                >
-                <Marker position={{ lat: 30.516214, lng: -87.895966}} />
-            </Map>
+            <div style={{ position: 'relative', width: '100vw', height: '40vh' }}>
+                <Map
+                    google={this.props.google}
+                    zoom={15}
+                    style={this.state.mapStyles}
+                    initialCenter={{ lat: 30.516214, lng: -87.895966}}
+                    >
+                    <Marker position={{ lat: 30.516214, lng: -87.895966}} />
+                </Map>
+            </div>
+            
         )
     }
 }
