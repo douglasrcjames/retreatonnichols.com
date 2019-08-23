@@ -27,7 +27,7 @@ class Header extends Component {
       return (
         <header className="header-padding">
           <div className="top-nav">
-            <MediaQuery minWidth={751}>
+            <MediaQuery minWidth={815}>
               <div className="nav-container">
                 <Link to="/">
                   <img
@@ -55,6 +55,9 @@ class Header extends Component {
                       </NavLink>
                     </div>  
                   </div>
+                  <NavLink to="/testimonials" className="nav-link" activeClassName="nav-select">
+                      Testimonials
+                  </NavLink>
                   <NavLink to="/the-hosts" className="nav-link" activeClassName="nav-select">
                       The Hosts
                   </NavLink>
@@ -70,7 +73,7 @@ class Header extends Component {
             </MediaQuery>
 
             {/* Mobile */}
-            <MediaQuery maxWidth={750}>
+            <MediaQuery maxWidth={814}>
             <Menu
                 customBurgerIcon={<FaBars color="#0E76BC" onClick={() => this.toggleMenu()} />}
                 right

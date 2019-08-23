@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import SimpleMap from './SimpleMap'
+import SimpleMap from '../SimpleMap'
 
 export default class Home extends Component {
 
