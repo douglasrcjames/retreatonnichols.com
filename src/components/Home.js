@@ -9,7 +9,7 @@ export default class Home extends Component {
             <>
             <div className="video-container">
                 <video 
-                    autoplay="autoplay" 
+                    // autoplay="autoplay" 
                     loop 
                     muted>
                     <source src={PartyVid} type="video/mp4" />

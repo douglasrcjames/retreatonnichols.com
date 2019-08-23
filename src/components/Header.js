@@ -37,11 +37,32 @@ class Header extends Component {
                   />
                 </Link>
                 <div className="right">
-                  <NavLink to="/" exact={true} className="nav-link" activeClassName="nav-select">
-                      Home
+                  <div className="top-dropdown">
+                    <Link className="nav-link">Suites &nbsp;<i className="fas fa-chevron-down fa-xs" /> </Link>
+                    &nbsp;
+                    <div className="top-dropdown-content">
+                      <NavLink 
+                          to="/suites/georgia-o-keefe" 
+                          className="nav-link dropdown"
+                          activeClassName="nav-drop-select">
+                          Georgia O'Keefe
+                      </NavLink>
+                      <NavLink 
+                          to="/suites/piet-mondrian" 
+                          className="nav-link dropdown"
+                          activeClassName="nav-drop-select">
+                          Piet Mondrian
+                      </NavLink>
+                    </div>  
+                  </div>
+                  <NavLink to="/the-hosts" className="nav-link" activeClassName="nav-select">
+                      The Hosts
                   </NavLink>
-                  <NavLink to="/about-us" className="nav-link" activeClassName="nav-select">
-                      About Us
+                  <NavLink to="/reserve" className="nav-link" activeClassName="nav-select">
+                      Reserve
+                  </NavLink>
+                  <NavLink to="/contact" className="nav-link" activeClassName="nav-select">
+                      Contact
                   </NavLink>
                   &nbsp;
                 </div>
