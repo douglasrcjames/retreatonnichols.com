@@ -15,6 +15,8 @@ export default class TheHosts extends Component {
 
             {/* need more here... instagram handle for my mom? idk */}
 
+            {/* show images of sketches and building process of designing it (hurricane proof) */}
+
             </div>
         )
     }

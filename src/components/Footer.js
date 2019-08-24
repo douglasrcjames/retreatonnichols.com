@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import MediaQuery from "react-responsive";
+// import MediaQuery from "react-responsive";
 export default class Footer extends Component {
     constructor(props) {
         super(props);

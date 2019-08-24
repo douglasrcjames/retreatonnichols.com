@@ -1,13 +1,16 @@
 import React, { Component } from 'react'
+import PhotoGallery from '../../Utility'
+import { fairhopePhotos, propertyPhotos } from "../../photos";
 
 export default class GeorgiaOKeefe extends Component {
     render() {
         return (
             <div className="wrapper">
-                <h1>Georgia O'Keefe Suite</h1>
+                <br/><br/>
+                <h1 className="no-margin no-padding">Georgia O'Keefe Suite</h1>
                 <p>IN HONOR OF THE "MOTHER OF AMERICAN MODERNISM"</p>
 
-                GALLERY HERE
+                <PhotoGallery photos={propertyPhotos} />
 
                 <h2>The Space</h2>
                 <p>

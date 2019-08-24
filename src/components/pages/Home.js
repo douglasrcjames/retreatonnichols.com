@@ -1,17 +1,21 @@
 import React, { Component } from 'react'
 import SimpleMap from '../SimpleMap'
+import PhotoGallery from '../Utility'
+import { fairhopePhotos, propertyPhotos } from "../photos";
 
 export default class Home extends Component {
 
     render() {
-        var PartyVid = `http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4`;
+        var PartyVid = `https://firebasestorage.googleapis.com/v0/b/retreatonnichols.appspot.com/o/videos%2FWebsite%20Loop%20Video.mov?alt=media&token=9d99208e-9d3f-4852-84f7-1f704207728e`;
         return (
             <>
             <div className="video-container">
                 <video 
-                    // autoplay="autoplay" 
+                    autoplay="autoplay" 
                     loop 
-                    muted>
+                    muted
+                    className="video"
+                    >
                     <source src={PartyVid} type="video/mp4" />
                     <source src={PartyVid} type="video/ogg" />
                     Your browser does not support the video tag.
@@ -29,11 +33,7 @@ export default class Home extends Component {
                     We offer two pristine 720SF units (The Mondrian &amp; The O'Keefe - each sleeps 4). Units can be rented separately or together. Perfect for group events or a private getaway. 
                     Enjoy common outdoor kitchen, wood-fired pizza oven, fire pit, Petanque court, lawn &amp; board games, additional bathroom, laundry, gated parking, bicycles, &amp; golf cart.
                 </p>
-                <button className="s-btn">View Gallery</button>
-                <br/>
-                <hr/>
-                <br/>
-               
+                <PhotoGallery photos={propertyPhotos} />
             </div>
             
             <SimpleMap />
@@ -55,6 +55,7 @@ export default class Home extends Component {
                     and restaurants featured on the Food Network. 
                     Enjoy the warm and friendly charm of a walkable Southern town as you dine, shop, strut and stroll! Even those from Olean, New York are welcome and bound to enjoy themselves!
                 </p>
+                <PhotoGallery photos={fairhopePhotos} />
             </div>
  
             
