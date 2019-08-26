@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "firebase": "^6.4.2",
+    "formik": "^1.5.8",
     "google-maps-react": "^2.0.2",
     "react": "^16.8.6",
     "react-burger-menu": "^2.6.11",
@@ -13,7 +15,9 @@
     "react-photo-gallery": "^8.0.0",
     "react-responsive": "^7.0.0",
     "react-router-dom": "^5.0.1",
-    "react-scripts": "3.0.1"
+    "react-scripts": "3.0.1",
+    "react-toastify": "^5.3.2",
+    "yup": "^0.27.0"
   },
   "scripts": {
     "start": "react-scripts start",
