@@ -46,6 +46,7 @@
 
 .s-btn-inv:hover {
     background-color: rgb(12, 91, 145);
+    color: white;
 }
 
 /* Success */
@@ -79,7 +80,7 @@
     cursor: pointer;
     outline-width: 0;
     /* differences */
-    color: rgb(19, 204, 13);
+    color: rgb(45, 190, 40);
     background-color: white;
     border: 1px solid rgb(19, 204, 13);
 }
@@ -212,6 +213,7 @@
 
 .m-btn-inv:hover {
     background-color: rgb(12, 91, 145);
+    color: white;
 }
 
 /* Close Button */

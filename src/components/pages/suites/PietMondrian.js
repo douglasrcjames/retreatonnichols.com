@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PhotoGallery from '../../Utility'
-import { fairhopePhotos, propertyPhotos } from "../../photos";
+import { pietMondrianPhotos } from "../../photos";
 
 export default class PietMondrian extends Component {
     render() {
@@ -10,7 +10,7 @@ export default class PietMondrian extends Component {
                 <h1 className="no-margin no-padding">Piet Mondrian Suite</h1>
                 <p>IN HONOR OF THE FAMOUS DUTCH PAINTER</p>
 
-                <PhotoGallery photos={propertyPhotos} />
+                <PhotoGallery photos={pietMondrianPhotos} />
 
                 <h2>The Space</h2>
                 <p>

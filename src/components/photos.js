@@ -58,4 +58,123 @@ export const fairhopePhotos = [
         height: 3
     },
   ];
+
+  export const pietMondrianPhotos = [
+    {
+      src: require("../assets/images/property/piet_mondrian.jpg"),
+      width: 4,
+      height: 3
+    },
+    {
+      src: require("../assets/images/property/piet_mondrian2.jpg"),
+      width: 4,
+      height: 3
+    },
+    {
+      src: require("../assets/images/property/piet_mondrian3.jpg"),
+      width: 4,
+      height: 3
+    },
+    {
+        src: require("../assets/images/property/piet_mondrian4.jpg"),
+        width: 4,
+        height: 3
+    },
+    {
+        src: require("../assets/images/property/piet_mondrian5.jpg"),
+        width: 4,
+        height: 3
+    },
+    {
+        src: require("../assets/images/property/piet_mondrian6.jpg"),
+        width: 4,
+        height: 3
+    },
+    {
+      src: require("../assets/images/property/piet_mondrian7.jpg"),
+      width: 4,
+      height: 3
+    },
+    {
+      src: require("../assets/images/property/piet_mondrian8.jpg"),
+      width: 4,
+      height: 3
+    },
+    {
+      src: require("../assets/images/property/piet_mondrian9.jpg"),
+      width: 4,
+      height: 3
+    },
+    {
+      src: require("../assets/images/property/piet_mondrian10.jpg"),
+      width: 4,
+      height: 3
+    },
+  ];
+
+
+
+  export const georgiaOKeefePhotos = [
+    {
+      src: require("../assets/images/property/backyard2.jpg"),
+      width: 4,
+      height: 3
+    },
+    {
+      src: require("../assets/images/property/georgia_okeefe9.jpg"),
+      width: 4,
+      height: 3
+    },
+    {
+      src: require("../assets/images/property/georgia_okeefe10.jpg"),
+      width: 4,
+      height: 3
+    },
+    {
+      src: require("../assets/images/property/georgia_okeefe1.jpg"),
+      width: 4,
+      height: 3
+    },
+    {
+      src: require("../assets/images/property/georgia_okeefe2.jpg"),
+      width: 4,
+      height: 3
+    },
+    {
+      src: require("../assets/images/property/georgia_okeefe3.jpg"),
+      width: 4,
+      height: 3
+    },
+    {
+        src: require("../assets/images/property/georgia_okeefe4.jpg"),
+        width: 4,
+        height: 3
+    },
+    {
+        src: require("../assets/images/property/georgia_okeefe5.jpg"),
+        width: 4,
+        height: 3
+    },
+    {
+        src: require("../assets/images/property/georgia_okeefe6.jpg"),
+        width: 4,
+        height: 3
+    },
+    {
+      src: require("../assets/images/property/georgia_okeefe7.jpg"),
+      width: 4,
+      height: 3
+  },
+  {
+      src: require("../assets/images/property/georgia_okeefe8.jpg"),
+      width: 4,
+      height: 3
+  },
+  // {
+  //   src: require("../assets/images/property/georgia_okeefe.jpg"),
+  //   width: 4,
+  //   height: 3
+  // },
+  ];
+
   

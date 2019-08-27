@@ -31,6 +31,5 @@ class SimpleMap extends Component {
 }
 
 export default GoogleApiWrapper({
-    apiKey: process.env.REACT_APP_GOOGLEMAPS_API_KEY,
-    wrapperClassName: 'p-child p-container inline'
+    apiKey: process.env.REACT_APP_GOOGLEMAPS_API_KEY
   })(SimpleMap);

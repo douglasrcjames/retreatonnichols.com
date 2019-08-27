@@ -1,12 +1,14 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import SimpleMap from '../SimpleMap'
 import PhotoGallery from '../Utility'
 import { fairhopePhotos, propertyPhotos } from "../photos";
+import { Grid, Row, Col } from 'react-flexbox-grid';
 
 export default class Home extends Component {
 
     render() {
-        var PartyVid = `https://firebasestorage.googleapis.com/v0/b/retreatonnichols.appspot.com/o/videos%2FWebsite%20Loop%20Video.mov?alt=media&token=9d99208e-9d3f-4852-84f7-1f704207728e`;
+        var PartyVid = `https://firebasestorage.googleapis.com/v0/b/retreatonnichols.appspot.com/o/videos%2Fwebsite%20loop%20720p60.mov?alt=media&token=a378f566-189b-4245-8b37-a7331aca7f0b`;
         return (
             <>
             <div className="video-container">
@@ -30,10 +32,39 @@ export default class Home extends Component {
                 <h1>The Property</h1>
                 <p>
                     The Retreat on Nichols is a new lavish contemporary micro-cottage community within walking/biking/golf-carting distance to downtown Fairhope. 
-                    We offer two pristine 720SF units (The Mondrian &amp; The O'Keefe - each sleeps 4). Units can be rented separately or together. Perfect for group events or a private getaway. 
+                    We offer two pristine 720SF units (The Mondrian &amp; The O'Keefe - each sleeps 4. Units can be rented separately or together. Perfect for group events or a private getaway. 
                     Enjoy common outdoor kitchen, wood-fired pizza oven, fire pit, Petanque court, lawn &amp; board games, additional bathroom, laundry, gated parking, bicycles, &amp; golf cart.
                 </p>
                 <PhotoGallery photos={propertyPhotos} />
+            </div>
+
+            <div className="l-container">
+                <h1>The Suites</h1>
+                <Grid fluid>
+                    <Row>
+                        <Col xs={12} sm={6}>
+                            <img
+                            className="responsive"
+                            alt="Georgia O'Keefe"
+                            src={require("../../assets/images/property/georgia_okeefe9.jpg")}
+                            />
+                            <h2>Georgia O'Keefe</h2>
+                            <p className="">Named to honor the famous American artist Georgia O'Keefe, better known as the "Mother of American modernism".</p>
+                            <Link to="/reserve/"><button className="s-btn-success">Reserve</button></Link>  <Link to="/suites/georgia-o-keefe/"><button className="s-btn-inv">Read more</button></Link>
+                        </Col>
+                        <Col xs={12} sm={6}>
+                            <img
+                            className="responsive"
+                            alt="Piet Mondrian"
+                            src={require("../../assets/images/property/piet_mondrian10.jpg")}
+                            />
+                            <h2>Piet Mondrian</h2>
+                            <p className="">Named to honor the Dutch painter and theoretician who was regarded as one of the greatest artists of the 20th century.</p>
+                            <Link to="/reserve/"><button className="s-btn-success">Reserve</button></Link>  <Link to="/suites/georgia-o-keefe/"><button className="s-btn-inv">Read more</button></Link>
+                        </Col>
+                    </Row>
+                </Grid>
+                
             </div>
             
             <SimpleMap />

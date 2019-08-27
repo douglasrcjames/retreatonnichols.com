@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter } from "react-router-dom";
 import Routes from "./routes";
+import ScrollToTop from "../src/ScrollToTop"; // Fixed bug where pages would start in middle
 
 // CSS
 import "./assets/css/Header.css";
@@ -19,9 +20,11 @@ import Footer from "./components/Footer";
 function App() {
   return (
       <BrowserRouter>
-        <Header />
-        <Routes />
-        <Footer />
+        <ScrollToTop>
+          <Header />
+          <Routes />
+          <Footer />
+        </ScrollToTop>
       </BrowserRouter>
   );
 }

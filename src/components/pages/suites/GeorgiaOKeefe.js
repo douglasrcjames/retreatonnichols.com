@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PhotoGallery from '../../Utility'
-import { fairhopePhotos, propertyPhotos } from "../../photos";
+import { georgiaOKeefePhotos } from "../../photos";
 
 export default class GeorgiaOKeefe extends Component {
     render() {
@@ -10,7 +10,7 @@ export default class GeorgiaOKeefe extends Component {
                 <h1 className="no-margin no-padding">Georgia O'Keefe Suite</h1>
                 <p>IN HONOR OF THE "MOTHER OF AMERICAN MODERNISM"</p>
 
-                <PhotoGallery photos={propertyPhotos} />
+                <PhotoGallery photos={georgiaOKeefePhotos} />
 
                 <h2>The Space</h2>
                 <p>
