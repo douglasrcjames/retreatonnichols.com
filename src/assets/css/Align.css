@@ -23,7 +23,7 @@ html {
         /* For outer div holding the body */
         margin: 0 auto;
         width: 80%;
-        padding: 2.5% 0 0 0;
+        padding: 5% 0 0 0;
     }
 
     .l-container {
@@ -50,7 +50,7 @@ html {
     .wrapper {
         margin: 0 auto;
         width: 70%;
-        padding: 5% 0 0 0;
+        padding: 10% 0 0 0;
     }
 
     .l-container {
@@ -77,7 +77,7 @@ html {
     .wrapper {
         margin: 0 auto;
         width: 90%;
-        padding: 10% 0 0 0;
+        padding: 15% 0 0 0;
     }
 
     .l-container {

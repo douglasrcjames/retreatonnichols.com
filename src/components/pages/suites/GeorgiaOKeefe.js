@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PhotoGallery from '../../Utility'
 import { georgiaOKeefePhotos } from "../../photos";
+import { Link } from 'react-router-dom'
 
 export default class GeorgiaOKeefe extends Component {
     render() {
@@ -8,7 +9,7 @@ export default class GeorgiaOKeefe extends Component {
             <div className="wrapper">
                 <br/><br/>
                 <h1 className="no-margin no-padding">Georgia O'Keefe Suite</h1>
-                <p>IN HONOR OF THE "MOTHER OF AMERICAN MODERNISM"</p>
+                <p>In honor of the "Mother of American Modernism".</p>
 
                 <PhotoGallery photos={georgiaOKeefePhotos} />
 
@@ -45,7 +46,7 @@ export default class GeorgiaOKeefe extends Component {
                 </p>
                 <h2>Other things to note</h2>
                 <p>Meal worms, earth worms, and gold fish are all available so guests can feed, Moe and Joe, the baby turtles (hatched on the property during the landscaping of the micro-cottages).</p>
-                <button className="m-btn">Reserve</button>
+                <Link to="/reserve/"><button className="m-btn">Reserve</button></Link>
             </div>
         )
     }

@@ -45,22 +45,26 @@ export default class Home extends Component {
                         <Col xs={12} sm={6}>
                             <img
                             className="responsive"
-                            alt="Georgia O'Keefe"
-                            src={require("../../assets/images/property/georgia_okeefe9.jpg")}
-                            />
-                            <h2>Georgia O'Keefe</h2>
-                            <p className="">Named to honor the famous American artist Georgia O'Keefe, better known as the "Mother of American modernism".</p>
-                            <Link to="/reserve/"><button className="s-btn-success">Reserve</button></Link>  <Link to="/suites/georgia-o-keefe/"><button className="s-btn-inv">Read more</button></Link>
-                        </Col>
-                        <Col xs={12} sm={6}>
-                            <img
-                            className="responsive"
                             alt="Piet Mondrian"
                             src={require("../../assets/images/property/piet_mondrian10.jpg")}
                             />
                             <h2>Piet Mondrian</h2>
                             <p className="">Named to honor the Dutch painter and theoretician who was regarded as one of the greatest artists of the 20th century.</p>
-                            <Link to="/reserve/"><button className="s-btn-success">Reserve</button></Link>  <Link to="/suites/georgia-o-keefe/"><button className="s-btn-inv">Read more</button></Link>
+                            <Link to="/reserve/"><button className="s-btn">Reserve</button></Link>  <Link to="/suites/georgia-o-keefe/"><button className="s-btn-inv">Read more</button></Link>
+                            <br/>
+                            <br/>
+                        </Col>
+                        <Col xs={12} sm={6}>
+                            <img
+                            className="responsive"
+                            alt="Georgia O'Keefe"
+                            src={require("../../assets/images/property/georgia_okeefe9.jpg")}
+                            />
+                            <h2>Georgia O'Keefe</h2>
+                            <p className="">Named to honor the famous American artist Georgia O'Keefe, better known as the "Mother of American modernism".</p>
+                            <Link to="/reserve/"><button className="s-btn">Reserve</button></Link>  <Link to="/suites/georgia-o-keefe/"><button className="s-btn-inv">Read more</button></Link>
+                            <br/>
+                            <br/>
                         </Col>
                     </Row>
                 </Grid>

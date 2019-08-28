@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import PhotoGallery from '../Utility'
+import { hostPhotos } from "../photos";
 
 export default class TheHosts extends Component {
     render() {
@@ -13,9 +15,17 @@ export default class TheHosts extends Component {
                     and meeting interesting, like-minded people.
                 </p>
 
+                <div className="m-width center">
+                    <PhotoGallery photos={hostPhotos} />
+                </div>
+
             {/* need more here... instagram handle for my mom? idk */}
 
             {/* show images of sketches and building process of designing it (hurricane proof) */}
+
+            {/* Show more images of mom and dad! */}
+
+            {/* Add stuff about sherry (ask to verify) */}
 
             </div>
         )

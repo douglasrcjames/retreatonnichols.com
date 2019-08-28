@@ -177,4 +177,17 @@ export const fairhopePhotos = [
   // },
   ];
 
+  export const hostPhotos = [
+    {
+      src: require("../assets/images/property/kay_and_tarrel.JPG"),
+      width: 4,
+      height: 3
+    },
+    {
+      src: require("../assets/images/property/kay_tarrel.jpg"),
+      width: 3,
+      height: 4
+    },
+  ];
+
   

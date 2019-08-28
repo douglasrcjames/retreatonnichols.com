@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter } from "react-router-dom";
 import Routes from "./routes";
 import ScrollToTop from "../src/ScrollToTop"; // Fixed bug where pages would start in middle
+import { ToastContainer } from "react-toastify";
 
 // CSS
 import "./assets/css/Header.css";
@@ -12,6 +13,7 @@ import "./assets/css/Images.css";
 import "./assets/css/Forms.css";
 import "./assets/css/Buttons.css";
 import "./assets/css/Misc.css";
+import 'react-toastify/dist/ReactToastify.css';
 
 // Components
 import Header from "./components/Header";
@@ -22,6 +24,7 @@ function App() {
       <BrowserRouter>
         <ScrollToTop>
           <Header />
+          <ToastContainer position="top-center" hideProgressBar={true} />
           <Routes />
           <Footer />
         </ScrollToTop>

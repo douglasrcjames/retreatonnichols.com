@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PhotoGallery from '../../Utility'
 import { pietMondrianPhotos } from "../../photos";
+import { Link } from 'react-router-dom'
 
 export default class PietMondrian extends Component {
     render() {
@@ -8,7 +9,7 @@ export default class PietMondrian extends Component {
             <div className="wrapper">
                 <br/><br/>
                 <h1 className="no-margin no-padding">Piet Mondrian Suite</h1>
-                <p>IN HONOR OF THE FAMOUS DUTCH PAINTER</p>
+                <p>In honor of the famous Dutch painter.</p>
 
                 <PhotoGallery photos={pietMondrianPhotos} />
 
@@ -45,7 +46,7 @@ export default class PietMondrian extends Component {
                 </p>
                 <h2>Other things to note</h2>
                 <p>Meal worms, earth worms, and gold fish are all available so guests can feed, Moe and Joe, the baby turtles (hatched on the property during the landscaping of the micro-cottages).</p>
-                <button className="m-btn">Reserve</button>
+                <Link to="/reserve/"><button className="m-btn">Reserve</button></Link>
             </div>
         )
     }

@@ -42,31 +42,31 @@ class Header extends Component {
                     &nbsp;
                     <div className="top-dropdown-content">
                       <NavLink 
-                          to="/suites/georgia-o-keefe" 
-                          className="nav-link dropdown"
-                          activeClassName="nav-drop-select">
-                          Georgia O'Keefe
-                      </NavLink>
-                      <NavLink 
                           to="/suites/piet-mondrian" 
-                          className="nav-link dropdown"
+                          className="dropdown-nav-link dropdown"
                           activeClassName="nav-drop-select">
                           Piet Mondrian
                       </NavLink>
+                      <NavLink 
+                          to="/suites/georgia-o-keefe" 
+                          className="dropdown-nav-link dropdown"
+                          activeClassName="nav-drop-select">
+                          Georgia O'Keefe
+                      </NavLink>                     
                     </div>  
                   </div>
-                  <NavLink to="/testimonials" className="nav-link" activeClassName="nav-select">
+                  {/* <NavLink to="/testimonials" className="nav-link" activeClassName="nav-select">
                       Testimonials
-                  </NavLink>
+                  </NavLink> */}
                   <NavLink to="/the-hosts" className="nav-link" activeClassName="nav-select">
                       The Hosts
                   </NavLink>
                   <NavLink to="/reserve" className="nav-link" activeClassName="nav-select">
                       Reserve
                   </NavLink>
-                  <NavLink to="/contact" className="nav-link" activeClassName="nav-select">
+                  {/* <NavLink to="/contact" className="nav-link" activeClassName="nav-select">
                       Contact
-                  </NavLink>
+                  </NavLink> */}
                   &nbsp;
                 </div>
               </div>
@@ -81,15 +81,35 @@ class Header extends Component {
                 isOpen={this.state.menuOpen}
                 onStateChange={(state) => this.handleStateChange(state)}
               >
-                <NavLink id="home" className="menu-item" to="/" onClick={() => this.closeMenu()}>
-                    Home
+                <div className="side-dropdown">
+                  <span className="menu-item" >Suites &nbsp;<i className="fas fa-chevron-down fa-xs" /></span>
+                  &nbsp;
+                  <div className="side-dropdown-content">
+                    <NavLink 
+                        id="piet-mondrian"
+                        to="/suites/piet-mondrian" 
+                        className="menu-item"
+                        onClick={() => this.closeMenu()}>
+                        Piet Mondrian
+                    </NavLink>
+                    <NavLink 
+                        id="georgia-o-keefe"
+                        to="/suites/georgia-o-keefe" 
+                        className="menu-item"
+                        onClick={() => this.closeMenu()}>
+                        Georgia O'Keefe
+                    </NavLink>
+                  </div>
+                </div>
+                <NavLink to="/the-hosts" className="nav-link" activeClassName="nav-select" onClick={() => this.closeMenu()}>
+                  The Hosts
                 </NavLink>
-                <NavLink id="about-us" className="menu-item" to="/about-us" onClick={() => this.closeMenu()}>
-                    About Us
+                <NavLink to="/reserve" className="nav-link" activeClassName="nav-select" onClick={() => this.closeMenu()}>
+                  Reserve
                 </NavLink>
-                <NavLink id="contact-us" className="menu-item" to="/contact-us" onClick={() => this.closeMenu()}>
-                    Contact Us
-                </NavLink>
+                {/* <NavLink to="/contact" className="nav-link" activeClassName="nav-select">
+                  Contact
+                </NavLink> */}
               </Menu>
               {/* had to rearrange this order so the menu appear in the upper right corner */}
               <Link to="/">
