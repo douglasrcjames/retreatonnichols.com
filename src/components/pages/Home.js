@@ -50,7 +50,7 @@ export default class Home extends Component {
                             />
                             <h2>Piet Mondrian</h2>
                             <p className="">Named to honor the Dutch painter and theoretician who was regarded as one of the greatest artists of the 20th century.</p>
-                            <Link to="/reserve/"><button className="s-btn">Reserve</button></Link>  <Link to="/suites/georgia-o-keefe/"><button className="s-btn-inv">Read more</button></Link>
+                            <Link to="/reserve/"><button className="s-btn">Reserve</button></Link>  <Link to="/suites/piet-mondrian"><button className="s-btn-inv">Read more</button></Link>
                             <br/>
                             <br/>
                         </Col>
