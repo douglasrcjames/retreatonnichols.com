@@ -15,8 +15,14 @@
     font-size: 16;
 }
 
+.h0 {
+    font-size: 5em;
+    font-family: "Agency Regular";
+    color: #0E76BC;
+}
+
 h1 {
-    font-size: 3em;
+    font-size: 4em;
     font-family: "Agency Regular";
     color: #0E76BC;
 }
@@ -77,6 +83,7 @@ p.indent {
 
 a {
     text-decoration: none;
+    color: #0E76BC;
     font-family: 'Montserrat', sans-serif;
     cursor: pointer;
 }

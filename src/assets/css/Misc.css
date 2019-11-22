@@ -2,6 +2,8 @@
 * Misc css classes manipulating objects
 */
 
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
 /* Table */
 table {
     border-collapse: collapse;
@@ -123,7 +125,6 @@ hr {
 .clearfix {
     overflow: auto;
 }
-
 
 
 

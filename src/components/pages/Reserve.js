@@ -18,7 +18,7 @@ export default class Reserve extends Component {
                             <img
                                 className="responsive large"
                                 alt="Piet Mondrian"
-                                src={require("../../assets/images/property/piet_mondrian10.jpg")}
+                                src={require("../../assets/images/property-v2/pm.jpg")}
                                 />
                             <h2>Piet Mondrian (Unit A)</h2>
                             <Grid fluid>
@@ -48,10 +48,10 @@ export default class Reserve extends Component {
                         <Col md={12} lg={6}className="center-text">
                             <img
                                 className="responsive large"
-                                alt="Georgia O'Keefe"
-                                src={require("../../assets/images/property/georgia_okeefe9.jpg")}
+                                alt="Georgia O'Keeffe"
+                                src={require("../../assets/images/property-v2/gok.jpg")}
                                 />
-                            <h2>Georgia O'Keefe (Unit B)</h2>
+                            <h2>Georgia O'Keeffe (Unit B)</h2>
                             <Grid fluid>
                                 <Row>
                                     <Col md={12} lg={6}>

@@ -4,6 +4,17 @@ import SimpleMap from '../SimpleMap'
 import PhotoGallery from '../Utility'
 import { fairhopePhotos, propertyPhotos } from "../photos";
 import { Grid, Row, Col } from 'react-flexbox-grid';
+import Background1 from '../../assets/images/property-v2/front-dusk-2.jpg';
+
+var bgImgStyle1 = {
+    width: "100%",
+    height: "250px",
+    backgroundImage: `url(${Background1})`,
+    backgroundPosition: "50% 70%", // change me around to move up and down!
+    backgroundSize: "cover",
+    backgroundAttachment: "fixed",
+    marginTop: "2%"
+  };
 
 export default class Home extends Component {
 
@@ -32,12 +43,12 @@ export default class Home extends Component {
                 <h1>The Property</h1>
                 <p>
                     The Retreat on Nichols is a new lavish contemporary micro-cottage community within walking/biking/golf-carting distance to downtown Fairhope. 
-                    We offer two pristine 720SF units (The Mondrian &amp; The O'Keefe - each sleeps 4. Units can be rented separately or together. Perfect for group events or a private getaway. 
-                    Enjoy common outdoor kitchen, wood-fired pizza oven, fire pit, Petanque court, lawn &amp; board games, additional bathroom, laundry, gated parking, bicycles, &amp; golf cart.
+                    We offer two pristine 720SF units (The Mondrian &amp; The O'Keeffe - each sleeps 4. Units can be rented separately or together. Perfect for group events or a private getaway. 
+                    Enjoy common outdoor kitchen, wood-fired pizza oven, fire pit, Petanque and bean bag toss court, sip-'n-dip pool, lawn &amp; board games, laundry, additional bathroom, bicycles, golf cart, &amp; gated parking.
                 </p>
                 <PhotoGallery photos={propertyPhotos} />
             </div>
-
+            <div style ={ bgImgStyle1 }></div>
             <div className="l-container">
                 <h1>The Suites</h1>
                 <Grid fluid>
@@ -46,7 +57,7 @@ export default class Home extends Component {
                             <img
                             className="responsive"
                             alt="Piet Mondrian"
-                            src={require("../../assets/images/property/piet_mondrian10.jpg")}
+                            src={require("../../assets/images/property-v2/pm.jpg")}
                             />
                             <h2>Piet Mondrian</h2>
                             <p className="">Named to honor the Dutch painter and theoretician who was regarded as one of the greatest artists of the 20th century.</p>
@@ -57,12 +68,12 @@ export default class Home extends Component {
                         <Col xs={12} sm={6}>
                             <img
                             className="responsive"
-                            alt="Georgia O'Keefe"
-                            src={require("../../assets/images/property/georgia_okeefe9.jpg")}
+                            alt="Georgia O'Keeffe"
+                            src={require("../../assets/images/property-v2/gok.jpg")}
                             />
-                            <h2>Georgia O'Keefe</h2>
-                            <p className="">Named to honor the famous American artist Georgia O'Keefe, better known as the "Mother of American modernism".</p>
-                            <Link to="/reserve/"><button className="s-btn">Reserve</button></Link>  <Link to="/suites/georgia-o-keefe/"><button className="s-btn-inv">Read more</button></Link>
+                            <h2>Georgia O'Keeffe</h2>
+                            <p className="">Named to honor the famous American artist Georgia O'Keeffe, better known as the "Mother of American modernism".</p>
+                            <Link to="/reserve/"><button className="s-btn">Reserve</button></Link>  <Link to="/suites/georgia-o-keeffe/"><button className="s-btn-inv">Read more</button></Link>
                             <br/>
                             <br/>
                         </Col>
@@ -92,7 +103,7 @@ export default class Home extends Component {
                 </p>
                 <PhotoGallery photos={fairhopePhotos} />
             </div>
- 
+           
             
             
             </>

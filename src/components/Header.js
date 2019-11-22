@@ -48,10 +48,10 @@ class Header extends Component {
                           Piet Mondrian
                       </NavLink>
                       <NavLink 
-                          to="/suites/georgia-o-keefe" 
+                          to="/suites/georgia-o-keeffe" 
                           className="dropdown-nav-link dropdown"
                           activeClassName="nav-drop-select">
-                          Georgia O'Keefe
+                          Georgia O'Keeffe
                       </NavLink>                     
                     </div>  
                   </div>
@@ -93,11 +93,11 @@ class Header extends Component {
                         Piet Mondrian
                     </NavLink>
                     <NavLink 
-                        id="georgia-o-keefe"
-                        to="/suites/georgia-o-keefe" 
+                        id="georgia-o-keeffe"
+                        to="/suites/georgia-o-keeffe" 
                         className="menu-item"
                         onClick={() => this.closeMenu()}>
-                        Georgia O'Keefe
+                        Georgia O'Keeffe
                     </NavLink>
                   </div>
                 </div>
