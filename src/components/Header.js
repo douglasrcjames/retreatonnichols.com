@@ -38,7 +38,7 @@ class Header extends Component {
                 </Link>
                 <div className="right">
                   <div className="top-dropdown">
-                    <Link className="nav-link">Suites &nbsp;<i className="fas fa-chevron-down fa-xs" /> </Link>
+                    <Link to="" className="nav-link">Suites &nbsp;<i className="fas fa-chevron-down fa-xs" /> </Link>
                     &nbsp;
                     <div className="top-dropdown-content">
                       <NavLink 

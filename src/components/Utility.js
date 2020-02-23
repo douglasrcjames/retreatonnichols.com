@@ -7,7 +7,6 @@ export default function PhotoGallery(props) {
   const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
   const openLightbox = useCallback((event, { photo, index }) => {
-    console.log("index:" + index);
     setCurrentImage(index);
     setViewerIsOpen(true);
   }, []);

@@ -53,30 +53,36 @@ export const fairhopePhotos = [
         height: 2.8
     },
     {
-      src: require("../assets/images/property-v2/shared (1).jpg"),
+      src: require("../assets/images/property-v3/sip-n-dip.jpg"),
+      width: 2.4,
+      height: 1.6
+    },
+    {
+      src: require("../assets/images/property-v3/hot-tub-2.jpg"),
+      width: 2.4,
+      height: 1.6
+    },
+    {
+      src: require("../assets/images/property-v3/golf-cart.jpg"),
       width: 4.2,
       height: 2.8
     },
     {
-      src: require("../assets/images/property-v2/shared (3).jpg"),
-      width: 4.2,
-      height: 2.8
+      src: require("../assets/images/property-v3/laundry-2.jpg"),
+      width: 2.4,
+      height: 1.6
     },
     {
-      src: require("../assets/images/property-v2/laundry.jpg"),
-      width: 4.2,
-      height: 2.8
+      src: require("../assets/images/property-v3/laundry.jpg"),
+      width: 2.4,
+      height: 1.6
     },
     {
-      src: require("../assets/images/property-v2/shared-2.jpg"),
-      width: 4.2,
-      height: 2.8
+      src: require("../assets/images/property-v3/guest-bath.jpg"),
+      width: 2.4,
+      height: 1.6
     },
-    {
-      src: require("../assets/images/property-v2/golf-cart.jpg"),
-      width: 4.2,
-      height: 2.8
-    },
+
   ];
 
   export const pietMondrianPhotos = [

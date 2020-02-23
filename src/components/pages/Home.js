@@ -5,6 +5,7 @@ import PhotoGallery from '../Utility'
 import { fairhopePhotos, propertyPhotos } from "../photos";
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import Background1 from '../../assets/images/property-v2/front-dusk-2.jpg';
+import MediaQuery from "react-responsive";
 
 var bgImgStyle1 = {
     width: "100%",
@@ -22,12 +23,12 @@ export default class Home extends Component {
         var PartyVid = `https://firebasestorage.googleapis.com/v0/b/retreatonnichols.appspot.com/o/videos%2Fwebsite%20loop%20720p60.mov?alt=media&token=a378f566-189b-4245-8b37-a7331aca7f0b`;
         return (
             <>
-            <div className="video-container">
+            <div className="bg-video-container">
                 <video 
-                    autoplay="autoplay" 
+                    autoPlay="autoplay" 
                     loop 
                     muted
-                    className="video"
+                    className="bg-video"
                     >
                     <source src={PartyVid} type="video/mp4" />
                     <source src={PartyVid} type="video/ogg" />
@@ -48,7 +49,14 @@ export default class Home extends Component {
                 </p>
                 <PhotoGallery photos={propertyPhotos} />
             </div>
-            <div style ={ bgImgStyle1 }></div>
+            <MediaQuery minWidth={901}>
+                <div style ={ bgImgStyle1 }></div>
+            </MediaQuery>
+            <MediaQuery maxWidth={900}>
+                <br/>
+                <br/>
+                <hr/>
+            </MediaQuery>
             <div className="l-container">
                 <h1>The Suites</h1>
                 <Grid fluid>

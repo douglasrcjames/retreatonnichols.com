@@ -54,7 +54,7 @@ class ContactForm extends Component {
         >
           {props => (
             <form onSubmit={props.handleSubmit}>
-              <label for="email">Email: </label>
+              <label htmlFor="email">Email: </label>
               <Field
                 type="email"
                 placeholder="john.doe@mail.com"
@@ -70,7 +70,7 @@ class ContactForm extends Component {
                 ""
               )}
               <br/>
-              <label for="name">Full name: </label>
+              <label htmlFor="name">Full name: </label>
               <Field
                 type="text"
                 placeholder="John Doe"
@@ -86,7 +86,7 @@ class ContactForm extends Component {
                 ""
               )}
               <br/>
-              <label for="message">Message: </label>
+              <label htmlFor="message">Message: </label>
               <Field
                 component="textarea"
                 placeholder="Enter a message"

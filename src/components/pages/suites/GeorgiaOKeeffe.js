@@ -26,7 +26,22 @@ export default class GeorgiaOKeeffe extends Component {
                         <br/>
                         <hr/>
                     </div>
-
+                   <div className="m-container">
+                    <div className="video-container center-text">
+                            <iframe 
+                                id="showcase-player"
+                                title="3D model of Georgia O'Keeffe Suite" 
+                                src='https://my.matterport.com/show/?m=C25C6URfGTQ' 
+                                frameBorder="0" 
+                                allowFullScreen
+                                allow='vr'
+                                >
+                                
+                            </iframe>
+                        </div>
+                   </div>
+                   
+                   
                     <h2>The Space</h2>
                     <p>
                         Guests will enter the Retreat on Nichols through a Mondrian inspired automatic gate into a natural oasis. Designed as an eco-centric, 

@@ -25,6 +25,21 @@ export default class PietMondrian extends Component {
                         <br/>
                         <hr/>
                     </div>
+
+                    <div className="m-container">
+                        <div className="video-container center-text">
+                                <iframe 
+                                    id="showcase-player"
+                                    title="3D model of Piet Mondrian Suite" 
+                                    src='https://my.matterport.com/show/?m=rN4Q7c69wdm' 
+                                    frameBorder="0" 
+                                    allowFullScreen
+                                    allow='vr'
+                                    >
+                                    
+                                </iframe>
+                            </div>
+                    </div>
                    
                     <h2>The Space</h2>
                     <p>
