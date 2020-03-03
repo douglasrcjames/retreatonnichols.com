@@ -102,22 +102,21 @@ div.captioned {
 }
 
 /* Background video */
-.bg-video-container {
+.bg-media-container {
     position: relative;
     height: 100%;
     width: 100%;
     overflow: hidden;
 }
 
-.bg-video {
+.bg-media {
     height: auto;
     vertical-align: middle;
     width: 100vw;
     height: 70vh;
     object-fit: cover;
     margin: -5px;
-    filter: blur(3px);
-    -webkit-filter: blur(3px);
+
 } 
 
 .video-container {

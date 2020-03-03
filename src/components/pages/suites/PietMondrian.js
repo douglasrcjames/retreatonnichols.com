@@ -83,7 +83,27 @@ export default class PietMondrian extends Component {
 
                     <h1>Gallery</h1>
                     <PhotoGallery photos={pietMondrianPhotos} />
-                    
+
+                    <br/>
+                    <hr/>
+
+                    <h1>Tour</h1>
+                    <div className="center l-width">
+                        <div className="video-container">
+                            <iframe
+                                title="Piet Mondrian Suite"
+                                className="center-text"
+                                src="https://www.youtube.com/embed/Od6QqbUZStU"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen="allowfullscreen"
+                                mozallowfullscreen="mozallowfullscreen" 
+                                msallowfullscreen="msallowfullscreen" 
+                                oallowfullscreen="oallowfullscreen" 
+                                webkitallowfullscreen="webkitallowfullscreen" />
+                        </div>
+                    </div>
+
                 </div>
             </>
         )

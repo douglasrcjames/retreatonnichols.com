@@ -83,6 +83,25 @@ export default class GeorgiaOKeeffe extends Component {
 
                     <h1>Gallery</h1>
                     <PhotoGallery photos={georgiaOKeeffePhotos} />
+                    <br/>
+                    <hr/>
+
+                    <h1>Tour</h1>
+                    <div className="center l-width">
+                        <div className="video-container">
+                            <iframe
+                                title="Georgia O'Keeffe Suite"
+                                className="center-text"
+                                src="https://www.youtube.com/embed/g4UocOB2FjY"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen="allowfullscreen"
+                                mozallowfullscreen="mozallowfullscreen" 
+                                msallowfullscreen="msallowfullscreen" 
+                                oallowfullscreen="oallowfullscreen" 
+                                webkitallowfullscreen="webkitallowfullscreen" />
+                        </div>
+                    </div>
                 </div>
             </>
         )

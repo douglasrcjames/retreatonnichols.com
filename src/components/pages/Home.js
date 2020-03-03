@@ -11,7 +11,7 @@ var bgImgStyle1 = {
     width: "100%",
     height: "250px",
     backgroundImage: `url(${Background1})`,
-    backgroundPosition: "50% 70%", // change me around to move up and down!
+    backgroundPosition: "50% 50%", // change me around to move up and down!
     backgroundSize: "cover",
     backgroundAttachment: "fixed",
     marginTop: "2%"
@@ -20,25 +20,36 @@ var bgImgStyle1 = {
 export default class Home extends Component {
 
     render() {
-        var PartyVid = `https://firebasestorage.googleapis.com/v0/b/retreatonnichols.appspot.com/o/videos%2Fwebsite%20loop%20720p60.mov?alt=media&token=a378f566-189b-4245-8b37-a7331aca7f0b`;
+        var PartyVid = `https://firebasestorage.googleapis.com/v0/b/retreatonnichols.appspot.com/o/videos%2Faerials%20only%20for%20website-1920.mp4?alt=media&token=1375aadf-9460-4d80-9797-7e0af3f6712c`;
         return (
             <>
-            <div className="bg-video-container">
-                <video 
-                    autoPlay="autoplay" 
-                    loop 
-                    muted
-                    className="bg-video"
-                    >
-                    <source src={PartyVid} type="video/mp4" />
-                    <source src={PartyVid} type="video/ogg" />
-                    Your browser does not support the video tag.
-                </video>
-                <div className="overlay-modal center-text">
-                    <h1 className="no-padding no-margin">The Retreat on Nichols</h1>
-                    <p>Luxury short-term accommodations in Fairhope, Alabama</p>
+            <MediaQuery minWidth={901}>
+                <div className="bg-media-container">
+                    <video 
+                        autoPlay="autoplay" 
+                        loop 
+                        muted
+                        className="bg-media"
+                        >
+                        <source src={PartyVid} type="video/mp4" />
+                        <source src={PartyVid} type="video/ogg" />
+                        Your browser does not support the video tag.
+                    </video>
+                    <div className="overlay-modal center-text">
+                        <h1 className="no-padding no-margin">The Retreat on Nichols</h1>
+                        <p>Luxury short-term accommodations in Fairhope, Alabama</p>
+                    </div>
                 </div>
-            </div>
+            </MediaQuery>
+            <MediaQuery maxWidth={901}>
+                <div className="bg-media-container">
+                   <img className="bg-media" alt="aerial-shot" src={require("../../assets/images/property-v3/aerial-shot.jpg")} />
+                    <div className="overlay-modal center-text">
+                        <h1 className="no-padding no-margin">The Retreat on Nichols</h1>
+                        <p>Luxury short-term accommodations in Fairhope, Alabama</p>
+                    </div>
+                </div>
+            </MediaQuery>
 
             <div className="l-container">
                 <h1>The Property</h1>
