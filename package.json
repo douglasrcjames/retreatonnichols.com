@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "firebase": "^6.6.2",
+    "firebase": "7.17.2",
     "formik": "^1.5.8",
     "google-maps-react": "^2.0.2",
     "handlebars": "^4.7.3",
