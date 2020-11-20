@@ -47,17 +47,9 @@ exports.newContactMessage = functions.firestore
         }
 
         // Send it
-        const response = await transporter.sendMail(mailOptions, (err) => {
-            if(err){
-                return console.error(err)
-            } else {
-                return console.log("Successfully sent mail with sendMail()!")
-            }
-        })
-        console.log("sendMail response = " + response)
-
-        return console.log("Finished try{}...")
+        return transporter.sendMail(mailOptions)
     } catch (error) {
-        return console.error(err)
+        console.error(err);
+        return false;
     }
   });

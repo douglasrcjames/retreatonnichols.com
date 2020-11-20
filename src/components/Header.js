@@ -23,6 +23,7 @@ class Header extends Component {
   toggleMenu() {
     this.setState(state => ({menuOpen: !state.menuOpen}))
   }
+  
   render() {
       return (
         <header className="header-padding">
